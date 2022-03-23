@@ -50,15 +50,15 @@ const Card = ({ taskObj, index, deleteTask, updateListArray }) => {
 
         <div style = {
             { "position": "absolute", "right": "20px", "bottom": "20px" } } >
-        <i class = "far fa-edit mr-3"
+        <i class = "far mr-3"
         style = {
             { "color": colors[index % 5].primaryColor, "cursor": "pointer" } }
         onClick = {
-            () => setModal(true) } > </i> 
+            () => setModal(true) } > <img alt="trash" src="./edit.png" style={ { 'width': '25px' }} /> </i> 
             <i class = "fas fa-trash-alt"
         style = {
             { "color": colors[index % 5].primaryColor, "cursor": "pointer" } }
-        onClick = { handleDelete } > </i>
+        onClick = { handleDelete } > <img alt="trash" src="./bin.png" style={ { 'width': '25px' }} /> </i>
         </div> </div> 
         <EditTask modal = { modal }
         toggle = { toggle }
